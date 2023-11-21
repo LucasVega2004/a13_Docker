@@ -13,8 +13,8 @@ RUN mkdir -p /var/www/html/public
 
 
 ADD default.prod.conf /etc/nginx/conf.d/default.conf
-ADD laravel-docker.test.pem /etc/nginx/certs/laravel-docker.test.pem
-ADD laravel-docker.test-key.pem /etc/nginx/certs/laravel-docker.test-key.pem
+ADD lucas.informaticamajada.es.pem /etc/nginx/certs/lucas.informaticamajada.es.pem
+ADD lucas.informaticamajada.es-key.pem /etc/nginx/certs/lucas.informaticamajada.es-key.pem
 
 
 RUN sed -i "s/user www-data/user ${NGINXUSER}/g" /etc/nginx/nginx.conf
